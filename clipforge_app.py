@@ -29,7 +29,7 @@ from urllib.parse import parse_qs, urlparse
 import os
 PORT = int(os.environ.get("PORT", 8000))
 HOST = "0.0.0.0" if "PORT" in os.environ else "127.0.0.1"
-OUT_DIR = Path.cwd() / "clipforge_exports"
+OUT_DIR = Path("/tmp/clipforge_exports") if "PORT" in os.environ else (Path.cwd() / "clipforge_exports")
 OUT_DIR.mkdir(exist_ok=True)
 JOBS: dict[str, dict] = {}
 
