@@ -14,4 +14,4 @@ ENV PORT=7860
 ENV PYTHONUNBUFFERED=1
 EXPOSE 7860
 
-CMD ["python", "-u", "/app/clipforge_app.py"]
+CMD ["python", "-u", "/app/main.py"]
