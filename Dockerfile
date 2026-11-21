@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir --upgrade pip yt-dlp faster-whisper
 
-COPY . /app
+COPY . .
 
 RUN mkdir -p /tmp/clipforge_exports && chmod -R 777 /app /tmp/clipforge_exports
 
