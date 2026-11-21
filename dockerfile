@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg && rm -r
 WORKDIR /app
 RUN pip install --no-cache-dir yt-dlp faster-whisper
 
-COPY clipforge_app.py /app/clipforge_app.py
+COPY clipforge_app.py/app/clipforge_app.py
 
 ENV PORT=7860
 EXPOSE 7860
